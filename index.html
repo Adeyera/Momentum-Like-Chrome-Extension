@@ -2,7 +2,8 @@
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="index.css">
-        <title>Personal Dashboard</title>
+        <title>Home extension</title>
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <main>    
@@ -10,15 +11,20 @@
                 <div id="crypto">
                     <div id="crypto-top"></div>
                 </div>
-                <div id="weather"></div>
+                <div class="search"><input id="input" type="text" ><i class='bx bx-search-alt' id="searchIcon" onclick="search()" ></i></div>
+                <div id="weather">
+                    
+                </div>
+            </div>
+            <div class="timeStand">
+                <div class="greeting"> <span><i class='bx bx-sun'></i></span> <span id="greeting--session"></span> </div>
+                <h1 id="time" class="timeStand__time"></h1>
             </div>
             
-            <h1 id="time" class="time"></h1>
             <div class="footer">
                 <p id="author"></p>
                 <p id="quote"></p>
-            </div>
-           
+            </div>           
 
         </main>
         <script src="index.js"></script>
